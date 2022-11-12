@@ -14,7 +14,7 @@ export default function Home() {
 
       <div className="relative z-10 py-6 space-y-16 lg:space-y-32">
         <div className="text-center space-y-10 bg-white">
-          <h3 className="font-bold text-xl uppercase tracking-wider text-black">
+          <h3 className="font-bold text-xl uppercase tracking-widest text-black">
             Coming soon
           </h3>
 
