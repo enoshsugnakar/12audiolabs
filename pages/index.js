@@ -2,7 +2,7 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
-import background from './components/Images/frq.png';
+import background from './components/Images/bgfrq.png';
 import Logo from './components/Images/logo12al.png';
 
 export default function Home() {
@@ -25,12 +25,14 @@ export default function Home() {
             width={300}
             height={0}
           />
-          <Image
-            className="absolute lg:bottom-10 bottom-[160px] mx-auto"
+          {/* <Image
+            className=" absolute z-auto bg-center mx-auto"
             src={background}
+            position="absolute"
             width={2000}
             height={10}
-          />
+          /> */}
+
           {/* <h1 className="text-7xl lg:text-9xl font-extrabold tracking-tight text-white shadow-lg">
             12 Audio Labs
           </h1> */}
@@ -61,7 +63,7 @@ export default function Home() {
         </form>
       </div>
       <div className="flex bg-white ">
-        <ul className="flex mx-auto space-x-3 bg-white lg:mt-32 mt-32 mb-12">
+        <ul className="flex mx-auto space-x-3 bg-white lg:mt-24 mt-24 mb-12">
           <li>
             <Link
               href="https://instagram.com/attaboiilabs/"
