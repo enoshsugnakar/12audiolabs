@@ -2,15 +2,15 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
-import background from './components/Images/freq2.png';
+import background from './components/Images/freq3.png';
 import Logo from './components/Images/logo12al.png';
 
 export default function Home() {
   return (
     <div className="font-bold text-xl bg-white h-screen">
       <Image
-        className="mt-24 lg:bottom-24 absolute "
-        src={Logo}
+        className="mt-24 z-10 lg:bottom-24 absolute "
+        src={background}
         position="fixed"
         width={2000}
         height={10}
