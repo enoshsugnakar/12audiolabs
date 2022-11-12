@@ -37,7 +37,7 @@ export default function Home() {
             className="absolute top-1 right-1 bottom-1 px-4 lg:px-10 text-xl font-semibold bg-gray-900 text-white rounded-xl transition ease-in-out duration-500 hover:bg-gray-600"
             type="submit"
           >
-            Notify me
+            Notify m
           </button>
         </form>
       </div>
