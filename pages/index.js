@@ -2,12 +2,12 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
-import background from './components/Images/bgfrq.png';
+import background from './components/Images/bgfrq1.png';
 import Logo from './components/Images/logo12al.png';
 
 export default function Home() {
   return (
-    <div className=" font-bold text-xl  h-screen">
+    <div className=" font-bold text-xl bg-white  h-screen">
       <Head>
         <title>12 Audio Labs</title>
       </Head>
@@ -19,24 +19,26 @@ export default function Home() {
           </h3>
 
           <Image
-            className=" mx-auto"
+            className=" rounded-xl mx-auto"
             src={Logo}
             position="fixed"
             width={300}
             height={0}
+            priority
           />
           <Image
             className=" absolute inset-0 bg-center mx-auto"
             src={background}
             layout="fill"
             objectFit="cover"
+            priority
           />
 
           {/* <h1 className="text-7xl lg:text-9xl font-extrabold tracking-tight text-white shadow-lg">
             12 Audio Labs
           </h1> */}
 
-          <p className="text-xl lg:text-2xl tracking-wide mx-10 lg:max-w-xl lg:mx-auto text-slate-700 trackign-tight">
+          <p className="text-xl lg:text-2xl tracking-wide mx-10 lg:max-w-xl lg:mx-auto text-slate-700 tracking-tight">
             We`re under construction. Check back for an update soon. Stay in
             touch!
           </p>
