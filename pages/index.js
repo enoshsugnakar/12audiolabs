@@ -30,7 +30,7 @@ export default function Home() {
           <input
             type="email"
             name="email"
-            placeholder="hi_12audiolabs@gmail.com"
+            placeholder="You Email Id"
             className="w-full text-2xl font-light text-gray-900 placeholder-gray-500 py-5 pl-5 pr-36 lg:pr-44 rounded-xl"
           />
           <button
