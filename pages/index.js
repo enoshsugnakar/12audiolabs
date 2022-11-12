@@ -7,12 +7,12 @@ import Logo from './components/Images/logo12al.png';
 
 export default function Home() {
   return (
-    <div className="font-bold text-xl bg-white h-screen">
+    <div className=" font-bold text-xl  h-screen">
       <Head>
         <title>12 Audio Labs</title>
       </Head>
 
-      <div className="relative z-10 py-6  bg-white space-y-16 lg:space-y-32">
+      <div className="relative z-10 py-6 space-y-16 lg:space-y-32">
         <div className="text-center space-y-10 bg-white">
           <h3 className="font-bold text-xl uppercase tracking-wider text-black">
             Coming soon
@@ -25,13 +25,12 @@ export default function Home() {
             width={300}
             height={0}
           />
-          {/* <Image
-            className=" absolute z-auto bg-center mx-auto"
+          <Image
+            className=" absolute inset-0 bg-center mx-auto"
             src={background}
-            position="absolute"
-            width={2000}
-            height={10}
-          /> */}
+            layout="fill"
+            objectFit="cover"
+          />
 
           {/* <h1 className="text-7xl lg:text-9xl font-extrabold tracking-tight text-white shadow-lg">
             12 Audio Labs

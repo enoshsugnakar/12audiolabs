@@ -8,7 +8,11 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      // backgroundImage: {
+      //   'nature-light': "url('components/Images/bgfrq.png')",
+      // },
+    },
     fontFamily: {
       sans: ['Inter var', ...defaultTheme.fontFamily.sans],
     },
