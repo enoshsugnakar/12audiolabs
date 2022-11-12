@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Link from 'next/link';
+import Image from 'next/image';
+import Logo from './components/Images/freq.png';
 
 export default function Home() {
   return (
@@ -14,9 +16,16 @@ export default function Home() {
           <h3 className="font-bold text-xl uppercase tracking-wider text-slate-100">
             Coming soon
           </h3>
+          <Image
+            className="top-1 z-10 absolute "
+            src={Logo}
+            width={2000}
+            height={100}
+          />
           <h1 className="text-7xl lg:text-9xl font-extrabold tracking-tight text-white shadow-md shadow-inner">
             12 Audio Labs
           </h1>
+
           <p className="text-xl lg:text-2xl tracking-wide mx-10 lg:max-w-xl lg:mx-auto text-slate-300 trackign-tight">
             We`re under construction. Check back for an update soon. Stay in
             touch!
