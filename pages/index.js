@@ -2,11 +2,18 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
-import Logo from './components/Images/freq.png';
+import Logo from './components/Images/freq2.png';
 
 export default function Home() {
   return (
     <div className="font-bold text-xl bg-black h-screen">
+      <Image
+        className="mt-24 lg:bottom-24 absolute "
+        src={Logo}
+        position="fixed"
+        width={2000}
+        height={10}
+      />
       <Head>
         <title>12 Audio Labs</title>
       </Head>
@@ -16,13 +23,8 @@ export default function Home() {
           <h3 className="font-bold text-xl uppercase tracking-wider text-slate-100">
             Coming soon
           </h3>
-          <Image
-            className="top-1 z-10 absolute "
-            src={Logo}
-            width={2000}
-            height={100}
-          />
-          <h1 className="text-7xl lg:text-9xl font-extrabold tracking-tight text-white shadow-md shadow-inner">
+
+          <h1 className="text-7xl lg:text-9xl font-extrabold tracking-tight text-white shadow-lg">
             12 Audio Labs
           </h1>
 
