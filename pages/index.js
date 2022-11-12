@@ -2,7 +2,7 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
-import background from './components/Images/freq3.png';
+import background from './components/Images/freq4.png';
 import Logo from './components/Images/logo12al.png';
 
 export default function Home() {
@@ -26,7 +26,7 @@ export default function Home() {
             height={0}
           />
           <Image
-            className="absolute lg:bottom-10 "
+            className="absolute lg:bottom-10 bottom-50 mx-auto"
             src={background}
             width={2000}
             height={10}
