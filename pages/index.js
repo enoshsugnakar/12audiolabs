@@ -2,11 +2,12 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
-import Logo from './components/Images/freq2.png';
+import background from './components/Images/freq2.png';
+import Logo from './components/Images/logo12al.png';
 
 export default function Home() {
   return (
-    <div className="font-bold text-xl bg-black h-screen">
+    <div className="font-bold text-xl bg-white h-screen">
       <Image
         className="mt-24 lg:bottom-24 absolute "
         src={Logo}
@@ -18,17 +19,23 @@ export default function Home() {
         <title>12 Audio Labs</title>
       </Head>
 
-      <div className="relative z-10 py-6 space-y-16 lg:space-y-32">
-        <div className="text-center space-y-10">
-          <h3 className="font-bold text-xl uppercase tracking-wider text-slate-100">
+      <div className="relative z-10 py-6  bg-white space-y-16 lg:space-y-32">
+        <div className="text-center space-y-10 bg-white">
+          <h3 className="font-bold text-xl uppercase tracking-wider text-black">
             Coming soon
           </h3>
-
-          <h1 className="text-7xl lg:text-9xl font-extrabold tracking-tight text-white shadow-lg">
+          <Image
+            className="mx-auto"
+            src={Logo}
+            position="fixed"
+            width={300}
+            height={0}
+          />
+          {/* <h1 className="text-7xl lg:text-9xl font-extrabold tracking-tight text-white shadow-lg">
             12 Audio Labs
-          </h1>
+          </h1> */}
 
-          <p className="text-xl lg:text-2xl tracking-wide mx-10 lg:max-w-xl lg:mx-auto text-slate-300 trackign-tight">
+          <p className="text-xl lg:text-2xl tracking-wide mx-10 lg:max-w-xl lg:mx-auto text-slate-700 trackign-tight">
             We`re under construction. Check back for an update soon. Stay in
             touch!
           </p>
@@ -39,10 +46,11 @@ export default function Home() {
           method="POST"
         >
           <input
+            required
             type="email"
             name="email"
             placeholder="You Email Id"
-            className="w-full text-2xl font-light text-gray-900 placeholder-gray-500 py-5 pl-5 pr-36 lg:pr-44 rounded-xl"
+            className="w-full text-xl font-medium text-gray-900 bg-slate-100 shadow-md placeholder-gray-400 py-5 pl-5 pr-36 lg:pr-44 rounded-xl"
           />
           <button
             className="absolute top-1 right-1 bottom-1 px-4 lg:px-10 text-xl font-semibold bg-gray-900 text-white rounded-xl transition ease-in-out duration-500 hover:bg-gray-600"
@@ -52,15 +60,15 @@ export default function Home() {
           </button>
         </form>
       </div>
-      <div className="flex lg:mt-32 mt-20">
-        <ul className="flex mx-auto space-x-3">
+      <div className="flex bg-white ">
+        <ul className="flex mx-auto space-x-3 bg-white lg:mt-32 mt-32 mb-12">
           <li>
             <Link
               href="https://instagram.com/attaboiilabs/"
-              className="flex items-center justify-center w-10 h-10 rounded-full bg-gray-50 transition ease-in-out duration-500 hover:bg-black hover:text-white hover:shadow-lg"
+              className="flex items-center justify-center w-10 h-10 rounded-full bg-black transition ease-in-out duration-500 hover:bg-black hover:text-white hover:shadow-lg"
             >
               <svg
-                className="w-6 h-6"
+                className="w-6 h-6 text-white"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
@@ -77,10 +85,10 @@ export default function Home() {
           <li>
             <Link
               href="https://instagram.com/attaboiilabs/"
-              className="flex items-center justify-center w-10 h-10 rounded-full bg-gray-50 transition ease-in-out duration-500 hover:bg-red-500 hover:text-white hover:shadow-lg"
+              className="flex items-center justify-center w-10 h-10 rounded-full bg-black transition ease-in-out duration-500 hover:bg-red-500 hover:text-white hover:shadow-lg"
             >
               <svg
-                className="w-6 h-6"
+                className="w-6 h-6 text-white"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
