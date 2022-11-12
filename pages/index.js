@@ -8,13 +8,6 @@ import Logo from './components/Images/logo12al.png';
 export default function Home() {
   return (
     <div className="font-bold text-xl bg-white h-screen">
-      <Image
-        className="mt-24 z-10 lg:bottom-24 absolute "
-        src={background}
-        position="fixed"
-        width={2000}
-        height={10}
-      />
       <Head>
         <title>12 Audio Labs</title>
       </Head>
@@ -24,12 +17,19 @@ export default function Home() {
           <h3 className="font-bold text-xl uppercase tracking-wider text-black">
             Coming soon
           </h3>
+
           <Image
-            className="mx-auto"
+            className=" mx-auto"
             src={Logo}
             position="fixed"
             width={300}
             height={0}
+          />
+          <Image
+            className="absolute lg:bottom-10 "
+            src={background}
+            width={2000}
+            height={10}
           />
           {/* <h1 className="text-7xl lg:text-9xl font-extrabold tracking-tight text-white shadow-lg">
             12 Audio Labs
